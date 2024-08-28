@@ -1,8 +1,8 @@
 package Inheritance_Subclass;
 
-public class inheritanceAndConstructor {
-    public static void main(String[] args) {
-        BaseBall obj= new BaseBall();
+public class inheritanceConstructor {
+    public static void main(final String[] args) {
+        final BaseBall obj= new BaseBall();
     }
 }
 class Ball{
