@@ -6,10 +6,6 @@ import java.util.concurrent.TimeUnit;
 public class usingExecutor {
     public static void main(String[] args) {
         ScheduledThreadPoolExecutor pool= new ScheduledThreadPoolExecutor(25);
-        // Runnable alp, bta, gma;
-        // alp= new newLaunchEvent("Alpha");
-        // bta= new newLaunchEvent("Beta");
-        // gma= new newLaunchEvent("Gamma");
         for (int i = 20; i >= 0; i--) {
             pool.schedule(new newCountDownClock(i), 20-i, TimeUnit.SECONDS);
         }
