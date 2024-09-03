@@ -1,6 +1,6 @@
 package programming_threads;
 
-public class runableInterface {
+public class runnableInterface {
     public static void main(String[] args) {
         Thread clk= new CountDownClock();
         Runnable alp, bta, gma;
