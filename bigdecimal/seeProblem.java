@@ -32,3 +32,5 @@ public class seeProblem {
         System.out.println(nf.format(s));
     }
 }
+
+// the solution here is that you can use BigDecimal class
