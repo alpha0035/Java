@@ -2,6 +2,8 @@ package working_with_numbers_expressions;
 
 public class incrementAndDecrement {
     public static void main(String[] args) {
+        // you can use only on variables, not numeric and other expression
+        // a= b*5++; a=(b*5)++;     this will come to an error
         int a=10;
         int b=a--;
         // b is set to 10 then a decrease by 1
