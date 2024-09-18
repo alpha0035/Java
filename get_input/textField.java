@@ -10,7 +10,7 @@ import javax.swing.JTextField;
 //a text field is a box that user can type the text in
 public class textField {
     public static void main(String[] args) {
-        // new Namer();
+        new Namer();
         new Numeric();
     }
 }
@@ -22,7 +22,6 @@ class Namer extends JFrame{
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(599,499);
         this.setTitle("Greeting");
-        this.setVisible(true);
         JPanel panel = new JPanel();
         JLabel label = new JLabel("Enter your name: ");
         panel.add(label);
@@ -33,6 +32,7 @@ class Namer extends JFrame{
         panel.add(okButton);
         this.add(panel);
         this.setLocationRelativeTo(null);
+        this.setVisible(true);
     }
     private void okButtonClick(){
         String name= textname.getText();
