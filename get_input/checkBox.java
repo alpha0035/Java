@@ -26,6 +26,10 @@ class checkBox extends JFrame{
         panel.add(alp);
         panel.add(bta);
         panel.add(gma);
+        gma.addActionListener(e->{
+            JOptionPane.showMessageDialog(gma, "Gamma is unavailable", "Oops", JOptionPane.WARNING_MESSAGE);
+            gma.setSelected(false);
+        });
         okButton= new JButton("OK");
         okButton.addActionListener(e->{
             String msg="";
