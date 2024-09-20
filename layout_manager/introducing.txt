@@ -1,0 +1,12 @@
+There are six main layout manager:
+*   Flow: default for panels, this component follow other component
+*   Border: default for frames, devide into 5 regions: North, South, East, West and Center.
+*   Box: arrange components in single row or single column
+*   Grid: create a grid of identically sized components.
+*   GridBag: using more flexible than Grid, 
+    you can use different size in each row or column,   
+    components can span in more row or column, 
+    and you can tell layout manager what to do if the component is smaller or larger than than the space you alloted for it.
+*   Group: designing users applications. Describe 4 regions: left and right, top and bottom.
+
+To set layout manager for panels or frames, you use setLayout() method.
