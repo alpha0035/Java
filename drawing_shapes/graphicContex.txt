@@ -1,0 +1,12 @@
+Before you can do any drawing with Java 2D, you have to get yourself an object called a graphics context . 
+The best way to do that is to place all the code that does your drawing in the paint method of a component that’s added to a frame or panel so that it can be displayed. 
+The paint  method receives the graphics context for the component as a parameter.
+The graphics context object is created from a class called Graphics2D . 
+Just to be ornery, however, the paint  method is passed an object of the Graphics  class, from which Graphics2D  is derived. 
+As a result, the very first thing you need to do in your paint  method is cast the Graphicsparameter to a Graphics2D object, 
+like this:
+public void paint(Graphics g) 
+    {       
+        Graphics2D g2 = (Graphics2D)g;     
+        // more to come... 
+    }
